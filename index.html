@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FPSLAB CREATORS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #050811;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Arka plan animasyonlu neon toplar */
+    .bg-balls {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .ball {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,210,255,0.8) 0%, rgba(0,140,255,0) 70%);
+      animation: float 10s infinite ease-in-out alternate;
+    }
+
+    .ball1 { width: 250px; height: 250px; top: 10%; left: 10%; animation-duration: 8s; }
+    .ball2 { width: 350px; height: 350px; bottom: 10%; right: 10%; animation-duration: 12s; }
+    .ball3 { width: 180px; height: 180px; top: 50%; left: 50%; animation-duration: 10s; }
+
+    @keyframes float {
+      0% { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(50px, 80px) scale(1.2); }
+    }
+
+    /* Sol üst köşe başlığı */
+    header {
+      position: relative;
+      z-index: 10;
+      padding: 25px 35px;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #00d2ff;
+      text-shadow: 0 0 15px rgba(0, 210, 255, 0.8);
+    }
+
+    /* Orta İçerik */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      border: 2px solid #00d2ff;
+      box-shadow: 0 0 30px rgba(0, 210, 255, 0.3);
+      border-radius: 16px;
+      padding: 35px;
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .languages-container {
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+
+    .lang-box {
+      flex: 1;
+      background: rgba(2, 6, 23, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 210, 255, 0.2);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .flag-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card a {
+      color: #00d2ff;
+      text-decoration: none;
+      word-break: break-all;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-text {
+      margin-top: 15px;
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: #00d2ff;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px rgba(0, 210, 255, 0.6);
+      border-top: 1px solid rgba(0, 210, 255, 0.3);
+      padding-top: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .languages-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Neon Mavi Hareketli Toplar -->
+  <div class="bg-balls">
+    <div class="ball ball1"></div>
+    <div class="ball ball2"></div>
+    <div class="ball ball3"></div>
+  </div>
+
+  <header>
+    FPSLAB CRETOR⚡️
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="languages-container">
+        
+        <!-- Türkçe Kısım -->
+        <div class="lang-box">
+          <div class="flag-title">🇹🇷 Türkçe</div>
+          <p>
+            Fpslab⚡️çalışanları olarak size sitemizde olmayan oyunları işlemcileri ve ekran kartlarını tek tek getiriyoruz size hizmetimiz tam olarak açıktır FPS'inize göre oyunları işlemcileri çözünürlüklerini seçin ve ortalama en düşük ayarlı fps sınırlarınızı görün.<br><br>
+            <strong>Sitemiz:</strong> <a href="https://adfsgedsfhstjhfghfda.github.io./fps-lab/" target="_blank">https://adfsgedsfhstjhfghfda.github.io./fps-lab/</a><br><br>
+            Desteklerinizi ve bağışlarınızı bekliyoruz iyi günler dileriz❤️
+          </p>
+        </div>
+
+        <!-- İngilizce Kısım -->
+        <div class="lang-box">
+          <div class="flag-title">🇬🇧 English</div>
+          <p>
+            As Fpslab⚡️ staff, we bring you games, processors, and graphics cards that are not on our site one by one. Our service is fully available to you. Select games, processors, and resolutions according to your FPS and see your average lowest setting FPS limits.<br><br>
+            <strong>Our Website:</strong> <a href="https://adfsgedsfhstjhfghfda.github.io./fps-lab/" target="_blank">https://adfsgedsfhstjhfghfda.github.io./fps-lab/</a><br><br>
+            We expect your support and donations, we wish you a good day❤️
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Alt Başlık -->
+      <div class="footer-text">
+        FPS YAZILIMCALIRI⚡️
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
