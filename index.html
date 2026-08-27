@@ -258,7 +258,33 @@
     document.getElementById("rtxResult").innerText = "🎮 Seçilen Ekran Kartı: " + rtxCards[randomIndex];
   }
 </script>
-    </div>
+    <!-- Rastgele İşlemci Seçici Buton -->
+<div style="margin-top: 25px; text-align: center;">
+  <button id="randomCpuBtn" onclick="pickRandomCpu()" style="padding: 12px 24px; background: transparent; border: 2px solid #00d2ff; color: #00d2ff; border-radius: 8px; font-weight: bold; font-size: 1rem; cursor: pointer; box-shadow: 0 0 15px rgba(0, 210, 255, 0.4); text-shadow: 0 0 8px #00d2ff; transition: all 0.3s;">
+    🖥️ Rastgele İşlemci Seç / Pick Random CPU
+  </button>
+  
+  <div id="cpuResult" style="margin-top: 15px; font-size: 1.2rem; font-weight: bold; color: #00d2ff; min-height: 30px; text-shadow: 0 0 10px rgba(0, 210, 255, 0.8);"></div>
+</div>
+
+<script>
+  function pickRandomCpu() {
+    const cpus = [
+      "AMD Ryzen 5 5600 ⚡️",
+      "AMD Ryzen 5 7600X 🚀",
+      "AMD Ryzen 7 7800X3D 🏆",
+      "AMD Ryzen 9 7950X 👑",
+      "Intel Core i5-12400F 💻",
+      "Intel Core i5-13600K 🎯",
+      "Intel Core i7-13700K 💥",
+      "Intel Core i7-14700K 🔥",
+      "Intel Core i9-13900K ⚡️",
+      "Intel Core i9-14900K 🚀"
+    ];
+    const randomIndex = Math.floor(Math.random() * cpus.length);
+    document.getElementById("cpuResult").innerText = "⚙️ Seçilen İşlemci: " + cpus[randomIndex];
+  }
+</script>
   </main>
 
 </body>
