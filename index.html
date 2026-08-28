@@ -22,7 +22,6 @@
             position: relative;
         }
 
-        /* Neon Mavi Arka Plan Topları */
         .bg-balls {
             position: fixed;
             top: 0;
@@ -104,14 +103,14 @@
             gap: 8px;
         }
 
-        .card a {
+        a {
             color: #00d2ff;
             text-decoration: none;
             word-break: break-all;
             font-weight: bold;
         }
 
-        .card a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
@@ -135,6 +134,7 @@
             cursor: pointer;
             font-weight: 500;
             transition: all 0.3s;
+            display: inline-block;
         }
 
         .game-button:hover {
@@ -169,47 +169,42 @@
 </head>
 <body>
 
-    <!-- Arka Plan Neon Toplar -->
     <div class="bg-balls">
         <div class="ball ball1"></div>
         <div class="ball ball2"></div>
         <div class="ball ball3"></div>
     </div>
 
-    <!-- Sol Üst Köşe -->
+    <!-- Sol Üst Çalışan Linkler -->
     <header>
         <div style="font-size: 1.3rem; font-weight: 800; color: #00d2ff; text-shadow: 0 0 15px rgba(0, 210, 255, 0.8);">FPSLAB CRETOR⚡️</div>
-        <a href="https://github.com/Bnhasan01software" target="_blank" style="color: #00d2ff; text-decoration: none; font-size: 0.9rem; display: block; margin-top: 5px;">https://github.com/Bnhasan01software</a>
-        <a href="https://github.com/sdfsgedsfhstjhfghfda" target="_blank" style="color: #00d2ff; text-decoration: none; font-size: 0.9rem; display: block; margin-top: 3px;">https://github.com/sdfsgedsfhstjhfghfda</a>
+        <a href="https://github.com/Bnhasan01software" target="_blank" style="display: block; margin-top: 5px;">https://github.com/Bnhasan01software</a>
+        <a href="https://github.com/sdfsgedsfhstjhfghfda" target="_blank" style="display: block; margin-top: 3px;">https://github.com/sdfsgedsfhstjhfghfda</a>
     </header>
 
     <main>
         <div class="card">
             <div class="languages-container">
-                
-                <!-- Türkçe Kısım -->
                 <div class="lang-box">
                     <div class="flag-title">🇹🇷 Türkçe</div>
                     <p>
                         Fpslab⚡️çalışanları olarak size sitemizde olmayan oyunları işlemcileri ve ekran kartlarını tek tek getiriyoruz size hizmetimiz tam olarak açıktır FPS'inize göre oyunları işlemcileri çözünürlüklerini seçin ve ortalama en düşük ayarlı fps sınırlarınızı görün.<br><br>
-                        <strong>Sitemiz:</strong> <a href="https://adfsgedsfhstjhfghfda.github.io./fps-lab/" target="_blank">https://adfsgedsfhstjhfghfda.github.io./fps-lab/</a><br><br>
+                        <strong>Sitemiz:</strong> <a href="https://adfsgedsfhstjhfghfda.github.io/fps-lab/" target="_blank">https://adfsgedsfhstjhfghfda.github.io/fps-lab/</a><br><br>
                         Desteklerinizi ve bağışlarınızı bekliyoruz iyi günler dileriz❤️
                     </p>
                 </div>
 
-                <!-- İngilizce Kısım -->
                 <div class="lang-box">
                     <div class="flag-title">🇬🇧 English</div>
                     <p>
                         As Fpslab⚡️ staff, we bring you games, processors, and graphics cards that are not on our site one by one. Our service is fully available to you. Select games, processors, and resolutions according to your FPS and see your average lowest setting FPS limits.<br><br>
-                        <strong>Our Website:</strong> <a href="https://adfsgedsfhstjhfghfda.github.io./fps-lab/" target="_blank">https://adfsgedsfhstjhfghfda.github.io./fps-lab/</a><br><br>
+                        <strong>Our Website:</strong> <a href="https://adfsgedsfhstjhfghfda.github.io/fps-lab/" target="_blank">https://adfsgedsfhstjhfghfda.github.io/fps-lab/</a><br><br>
                         We expect your support and donations, we wish you a good day❤️
                     </p>
                 </div>
-
             </div>
 
-            <!-- Gelecek Oyunlar Bölümü -->
+            <!-- Gelecek Oyunlar -->
             <div style="margin-top: 25px; background: rgba(2, 6, 23, 0.6); padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.2); text-align: left;">
                 <div style="font-size: 1.1rem; font-weight: bold; color: #00d2ff; margin-bottom: 8px;">🎮 Gelecek Oyunlar:</div>
                 <p style="font-size: 0.9rem; line-height: 1.6; color: #e0e6ed;">
@@ -217,14 +212,12 @@
                 </p>
             </div>
 
-            <!-- FPSLAB Yazısı -->
             <div style="margin-top: 15px; font-size: 1.1rem; font-weight: bold; color: #00d2ff; text-shadow: 0 0 8px rgba(0, 210, 255, 0.6);">
                 ⚡️FPSLAB
             </div>
 
             <!-- Rastgele Seçiciler -->
             <div style="margin-top: 25px; background: rgba(2, 6, 23, 0.6); padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.2); text-align: center;">
-                
                 <div style="margin-bottom: 20px;">
                     <button class="rand-btn" onclick="pickRandomGame()">🎲 Rastgele Oyun Seç / Pick Random Game</button>
                     <div id="gameResult" style="margin-top: 10px; font-weight: bold; color: #00d2ff;"></div>
@@ -239,21 +232,20 @@
                     <button class="rand-btn" onclick="pickRandomCpu()">🖥️ Rastgele İşlemci Seç / Pick Random CPU</button>
                     <div id="cpuResult" style="margin-top: 10px; font-weight: bold; color: #00d2ff;"></div>
                 </div>
-
             </div>
 
-            <!-- Oyun Seçim Bölümü (Tıklandığında Çalışan Butonlar) -->
+            <!-- Tıklandığında Ana Sitemize Yönlendiren Oyun Butonları -->
             <div style="margin-top: 25px; background: rgba(2, 6, 23, 0.6); padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.2); text-align: center;">
                 <div style="font-size: 1.1rem; font-weight: bold; color: #00d2ff; margin-bottom: 5px;">🎮 Oyununuzu seçin / Select your game</div>
                 <div style="font-size: 0.85rem; color: #a0aec0; margin-bottom: 15px;">🇹🇷 1 kere tıklayın | 🇬🇧 Click 1 time</div>
                 
                 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-                    <button class="game-button" onclick="openGame('god-of-war')">God Of War / Ragnarök</button>
-                    <button class="game-button" onclick="openGame('rdr2')">Red Dead Redemption 2 / 1</button>
-                    <button class="game-button" onclick="openGame('tlou')">The Last Of Us Part I / II</button>
-                    <button class="game-button" onclick="openGame('resident-evil')">Resident Evil</button>
-                    <button class="game-button" onclick="openGame('days-gone')">Days Gone</button>
-                    <button class="game-button" onclick="openGame('mortal-kombat')">Mortal Kombat</button>
+                    <a href="https://adfsgedsfhstjhfghfda.github.io/fps-lab/" target="_blank" class="game-button">God Of War / Ragnarök</a>
+                    <a href="https://adfsgedsfhstjhfghfda.github.io/fps-lab/" target="_blank" class="game-button">Red Dead Redemption 2 / 1</a>
+                    <a href="https://adfsgedsfhstjhfghfda.github.io/fps-lab/" target="_blank" class="game-button">The Last Of Us Part I / II</a>
+                    <a href="https://adfsgedsfhstjhfghfda.github.io/fps-lab/" target="_blank" class="game-button">Resident Evil</a>
+                    <a href="https://adfsgedsfhstjhfghfda.github.io/fps-lab/" target="_blank" class="game-button">Days Gone</a>
+                    <a href="https://adfsgedsfhstjhfghfda.github.io/fps-lab/" target="_blank" class="game-button">Mortal Kombat</a>
                 </div>
             </div>
 
@@ -267,27 +259,19 @@
                 </p>
             </div>
 
-            <!-- Vatandaşlık İmzası -->
             <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(0, 210, 255, 0.2); font-size: 0.85rem; line-height: 1.6; color: #a0aec0; text-align: center;">
                 <p>🇹🇷 Bu site bir Türk vatandaşı tarafından yazılım kodları ile yapılmıştır.</p>
                 <p>🇬🇧 This site was made with software code by a Turkish citizen.</p>
                 <p>🇪🇸 Este sitio fue hecho con código de software por un ciudadano turco.</p>
             </div>
 
-            <!-- Alt Başlık -->
             <div class="footer-text">
                 FPS YAZILIMCALIRI⚡️
             </div>
         </div>
     </main>
 
-    <!-- JavaScript Fonksiyonları -->
     <script>
-        function openGame(gameName) {
-            // Oyun butonlarına basıldığında yönlendirilecek ana site linki
-            window.open("https://adfsgedsfhstjhfghfda.github.io./fps-lab/", "_blank");
-        }
-
         function pickRandomGame() {
             const games = ["God Of War Ragnarök 🪓", "Red Dead Redemption 2 🤠", "The Last Of Us Part I 🌿", "Resident Evil 4 Remake 🧟", "Cyberpunk 2077 🏙️", "Elden Ring ⚔️", "Minecraft 🧱", "Grand Theft Auto V 🚗", "Witcher 3 🐺"];
             const randomIndex = Math.floor(Math.random() * games.length);
