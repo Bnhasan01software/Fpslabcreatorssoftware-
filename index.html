@@ -9,11 +9,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            background-color: #090314;
+            background-color: #050811;
             color: #ffffff;
             min-height: 100vh;
             display: flex;
@@ -22,7 +22,7 @@
             position: relative;
         }
 
-        /* Cyberpunk Arka Plan Neon Toplar */
+        /* Neon Mavi Arka Plan Topları */
         .bg-balls {
             position: fixed;
             top: 0;
@@ -36,37 +36,17 @@
         .ball {
             position: absolute;
             border-radius: 50%;
+            background: radial-gradient(circle, rgba(0,210,255,0.8) 0%, rgba(0,140,255,0) 70%);
             animation: float 10s infinite ease-in-out alternate;
         }
 
-        .ball1 { 
-            width: 300px; 
-            height: 300px; 
-            top: 5%; 
-            left: 5%; 
-            background: radial-gradient(circle, rgba(189,0,255,0.4) 0%, rgba(0,0,0,0) 70%);
-            animation-duration: 8s; 
-        }
-        .ball2 { 
-            width: 400px; 
-            height: 400px; 
-            bottom: 5%; 
-            right: 5%; 
-            background: radial-gradient(circle, rgba(255,0,128,0.4) 0%, rgba(0,0,0,0) 70%);
-            animation-duration: 12s; 
-        }
-        .ball3 { 
-            width: 200px; 
-            height: 200px; 
-            top: 45%; 
-            left: 45%; 
-            background: radial-gradient(circle, rgba(0,225,255,0.3) 0%, rgba(0,0,0,0) 70%);
-            animation-duration: 10s; 
-        }
+        .ball1 { width: 250px; height: 250px; top: 10%; left: 10%; animation-duration: 8s; }
+        .ball2 { width: 350px; height: 350px; bottom: 10%; right: 10%; animation-duration: 12s; }
+        .ball3 { width: 180px; height: 180px; top: 50%; left: 50%; animation-duration: 10s; }
 
         @keyframes float {
             0% { transform: translate(0, 0) scale(1); }
-            100% { transform: translate(40px, 60px) scale(1.15); }
+            100% { transform: translate(50px, 80px) scale(1.2); }
         }
 
         header {
@@ -86,10 +66,10 @@
         }
 
         .card {
-            background: rgba(18, 10, 36, 0.85);
-            backdrop-filter: blur(12px);
-            border: 2px solid #bd00ff;
-            box-shadow: 0 0 25px rgba(189, 0, 255, 0.4), inset 0 0 15px rgba(255, 0, 128, 0.2);
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            border: 2px solid #00d2ff;
+            box-shadow: 0 0 30px rgba(0, 210, 255, 0.3);
             border-radius: 16px;
             padding: 35px;
             max-width: 900px;
@@ -99,17 +79,17 @@
 
         .languages-container {
             display: flex;
-            gap: 20px;
+            gap: 30px;
             justify-content: space-between;
             margin-bottom: 25px;
         }
 
         .lang-box {
             flex: 1;
-            background: rgba(10, 4, 22, 0.7);
+            background: rgba(2, 6, 23, 0.6);
             padding: 20px;
             border-radius: 10px;
-            border: 1px solid rgba(255, 0, 128, 0.3);
+            border: 1px solid rgba(0, 210, 255, 0.2);
             font-size: 0.95rem;
             line-height: 1.6;
             text-align: left;
@@ -122,49 +102,62 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            color: #ff0080;
         }
 
         .card a {
-            color: #00e1ff;
+            color: #00d2ff;
             text-decoration: none;
             word-break: break-all;
             font-weight: bold;
-            transition: color 0.3s;
         }
 
         .card a:hover {
-            color: #ff0080;
-            text-shadow: 0 0 8px rgba(255, 0, 128, 0.8);
+            text-decoration: underline;
         }
 
         .footer-text {
             margin-top: 15px;
             font-size: 1.3rem;
             font-weight: 900;
-            color: #ff0080;
-            letter-spacing: 1.5px;
-            text-shadow: 0 0 12px rgba(255, 0, 128, 0.8);
-            border-top: 1px solid rgba(189, 0, 255, 0.4);
+            color: #00d2ff;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(0, 210, 255, 0.6);
+            border-top: 1px solid rgba(0, 210, 255, 0.3);
             padding-top: 15px;
         }
 
         .game-button {
             padding: 10px 15px;
-            background: rgba(25, 12, 48, 0.9);
-            border: 1px solid #bd00ff;
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid #00d2ff;
             color: #fff;
             border-radius: 6px;
             cursor: pointer;
             font-weight: 500;
-            transition: all 0.3s ease;
+            transition: all 0.3s;
         }
 
         .game-button:hover {
-            background: #bd00ff;
-            color: #ffffff;
-            box-shadow: 0 0 15px rgba(189, 0, 255, 0.8);
-            transform: translateY(-2px);
+            background: #00d2ff;
+            color: #050811;
+            box-shadow: 0 0 10px rgba(0, 210, 255, 0.6);
+        }
+
+        .rand-btn {
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid #00d2ff;
+            color: #00d2ff;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
+            transition: 0.3s;
+        }
+
+        .rand-btn:hover {
+            background: #00d2ff;
+            color: #050811;
         }
 
         @media (max-width: 768px) {
@@ -175,9 +168,8 @@
     </style>
 </head>
 <body>
-    </div>
 
-    <!-- Neon Arka Plan Topları -->
+    <!-- Arka Plan Neon Toplar -->
     <div class="bg-balls">
         <div class="ball ball1"></div>
         <div class="ball ball2"></div>
@@ -186,9 +178,9 @@
 
     <!-- Sol Üst Köşe -->
     <header>
-        <div style="font-size: 1.3rem; font-weight: 800; color: #00e1ff; text-shadow: 0 0 15px rgba(0, 225, 255, 0.8);">FPSLAB CRETOR⚡️</div>
-        <a href="https://github.com/Bnhasan01software" target="_blank" style="color: #00e1ff; text-decoration: none; font-size: 0.9rem; display: block; margin-top: 5px;">https://github.com/Bnhasan01software</a>
-        <a href="https://github.com/sdfsgedsfhstjhfghfda" target="_blank" style="color: #00e1ff; text-decoration: none; font-size: 0.9rem; display: block; margin-top: 3px;">https://github.com/sdfsgedsfhstjhfghfda</a>
+        <div style="font-size: 1.3rem; font-weight: 800; color: #00d2ff; text-shadow: 0 0 15px rgba(0, 210, 255, 0.8);">FPSLAB CRETOR⚡️</div>
+        <a href="https://github.com/Bnhasan01software" target="_blank" style="color: #00d2ff; text-decoration: none; font-size: 0.9rem; display: block; margin-top: 5px;">https://github.com/Bnhasan01software</a>
+        <a href="https://github.com/sdfsgedsfhstjhfghfda" target="_blank" style="color: #00d2ff; text-decoration: none; font-size: 0.9rem; display: block; margin-top: 3px;">https://github.com/sdfsgedsfhstjhfghfda</a>
     </header>
 
     <main>
@@ -218,88 +210,56 @@
             </div>
 
             <!-- Gelecek Oyunlar Bölümü -->
-            <div style="margin-top: 25px; background: rgba(10, 4, 22, 0.7); padding: 15px; border-radius: 10px; border: 1px solid rgba(189, 0, 255, 0.3); text-align: left;">
-                <div style="font-size: 1.1rem; font-weight: bold; color: #ff0080; margin-bottom: 8px;">🎮 Gelecek Oyunlar:</div>
+            <div style="margin-top: 25px; background: rgba(2, 6, 23, 0.6); padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.2); text-align: left;">
+                <div style="font-size: 1.1rem; font-weight: bold; color: #00d2ff; margin-bottom: 8px;">🎮 Gelecek Oyunlar:</div>
                 <p style="font-size: 0.9rem; line-height: 1.6; color: #e0e6ed;">
                     The Witcher 1, The Witcher 2, The Witcher 3, Resident Evil 6, Resident Evil 5, Resident Evil biohazard, SILENT HILL 2, The Walking Dead 2, BIOSHOCK, Half Life 2, Uncharted 4: A THIEF'S END, Ghost Of Tsushima, Detroit: Become Human, SKYRIM, Call Of Duty WWI, Hitman: Blood Money, Pragmata, Watch Dogs 2, Call Of Duty Modern Warfare 4, Green Hell, Minecraft Dungeons, Left 4 Dead, Resident Evil Resistance, Way Of The Hunter, Outlast, Beyond: Two Souls, 7 Days To Die, Escape The Backrooms, Payday 2, Dying Light.
                 </p>
             </div>
 
             <!-- FPSLAB Yazısı -->
-            <div style="margin-top: 15px; font-size: 1.1rem; font-weight: bold; color: #00e1ff; text-shadow: 0 0 8px rgba(0, 225, 255, 0.6);">
+            <div style="margin-top: 15px; font-size: 1.1rem; font-weight: bold; color: #00d2ff; text-shadow: 0 0 8px rgba(0, 210, 255, 0.6);">
                 ⚡️FPSLAB
             </div>
 
-            <!-- Rastgele Seçim Butonları Kutusu -->
-            <div style="margin-top: 25px; background: rgba(10, 4, 22, 0.7); padding: 20px; border-radius: 10px; border: 1px solid rgba(255, 0, 128, 0.3); text-align: center;">
+            <!-- Rastgele Seçiciler -->
+            <div style="margin-top: 25px; background: rgba(2, 6, 23, 0.6); padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.2); text-align: center;">
                 
-                <!-- Rastgele Oyun -->
-                <script>
-  function pickRandomGame() {
-    const games = [
-      "God Of War Ragnarök 🪓 -> 1080p Ultra: ~75 FPS",
-      "Red Dead Redemption 2 🤠 -> 1080p High: ~65 FPS",
-      "The Last Of Us Part I 🌿 -> 1080p Medium: ~60 FPS",
-      "Resident Evil 4 Remake 🧟 -> 1080p High: ~85 FPS",
-      "Cyberpunk 2077 🏙️ -> 1080p Medium: ~55 FPS",
-      "Elden Ring ⚔️ -> 1080p High: ~60 FPS (Locked)",
-      "GTA V 🚗 -> 1080p Very High: ~110 FPS",
-      "Witcher 3: Wild Hunt 🐺 -> 1080p High: ~80 FPS"
-    ];
-    const randomIndex = Math.floor(Math.random() * games.length);
-    document.getElementById("gameResult").innerText = "🎯 " + games[randomIndex];
-  }
+                <div style="margin-bottom: 20px;">
+                    <button class="rand-btn" onclick="pickRandomGame()">🎲 Rastgele Oyun Seç / Pick Random Game</button>
+                    <div id="gameResult" style="margin-top: 10px; font-weight: bold; color: #00d2ff;"></div>
+                </div>
 
-  function pickRandomRtx() {
-    const rtxCards = [
-      "RTX 3060 🎯 -> 1080p Oyunculuk için İdeal",
-      "RTX 3060 Ti ⚡️ -> 1080p Ultra / 2K Giriş",
-      "RTX 3070 🚀 -> 2K Yüksek Ayar Canavarı",
-      "RTX 4060 💻 -> DLSS 3 Destekli F/P Kartı",
-      "RTX 4060 Ti ⚡️ -> 1080p Yüksek FPS & 2K",
-      "RTX 4070 🚀 -> 2K Ultra Ayarlar İçin Harika",
-      "RTX 4070 Super 🔥 -> 2K / 4K Akıcı Performans",
-      "RTX 4090 🏆 -> 4K Ultra Saf Güç"
-    ];
-    const randomIndex = Math.floor(Math.random() * rtxCards.length);
-    document.getElementById("rtxResult").innerText = "🎮 " + rtxCards[randomIndex];
-  }
+                <div style="margin-bottom: 20px;">
+                    <button class="rand-btn" onclick="pickRandomRtx()">⚡️ Rastgele RTX Kartı Seç / Pick Random RTX GPU</button>
+                    <div id="rtxResult" style="margin-top: 10px; font-weight: bold; color: #00d2ff;"></div>
+                </div>
 
-  function pickRandomCpu() {
-    const cpus = [
-      "AMD Ryzen 5 5600 ⚡️ -> F/P Bütçe Kralı",
-      "AMD Ryzen 5 7600X 🚀 -> DDR5 Giriş / Güçlü Canavar",
-      "AMD Ryzen 7 7800X3D 🏆 -> En İyi Oyun İşlemcisi",
-      "Intel Core i5-12400F 💻 -> F/P Intel Seçeneği",
-      "Intel Core i5-13600K 🎯 -> Hem Oyun Hem İş İçin Canavar",
-      "Intel Core i7-14700K 🔥 -> Yüksek Performans Sevdalılarına"
-    ];
-    const randomIndex = Math.floor(Math.random() * cpus.length);
-    document.getElementById("cpuResult").innerText = "⚙️ " + cpus[randomIndex];
-  }
-                </script>
-                </div>>
+                <div>
+                    <button class="rand-btn" onclick="pickRandomCpu()">🖥️ Rastgele İşlemci Seç / Pick Random CPU</button>
+                    <div id="cpuResult" style="margin-top: 10px; font-weight: bold; color: #00d2ff;"></div>
+                </div>
 
             </div>
 
-            <!-- Oyun Seçim Bölümü -->
-            <div style="margin-top: 25px; background: rgba(10, 4, 22, 0.7); padding: 20px; border-radius: 10px; border: 1px solid rgba(189, 0, 255, 0.3); text-align: center;">
-                <div style="font-size: 1.1rem; font-weight: bold; color: #bd00ff; margin-bottom: 5px;">🎮 Oyununuzu seçin / Select your game</div>
+            <!-- Oyun Seçim Bölümü (Tıklandığında Çalışan Butonlar) -->
+            <div style="margin-top: 25px; background: rgba(2, 6, 23, 0.6); padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.2); text-align: center;">
+                <div style="font-size: 1.1rem; font-weight: bold; color: #00d2ff; margin-bottom: 5px;">🎮 Oyununuzu seçin / Select your game</div>
                 <div style="font-size: 0.85rem; color: #a0aec0; margin-bottom: 15px;">🇹🇷 1 kere tıklayın | 🇬🇧 Click 1 time</div>
                 
                 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-                    <button class="game-button">God Of War / Ragnarök</button>
-                    <button class="game-button">Red Dead Redemption 2 / 1</button>
-                    <button class="game-button">The Last Of Us Part I / II</button>
-                    <button class="game-button">Resident Evil</button>
-                    <button class="game-button">Days Gone</button>
-                    <button class="game-button">Mortal Kombat</button>
+                    <button class="game-button" onclick="openGame('god-of-war')">God Of War / Ragnarök</button>
+                    <button class="game-button" onclick="openGame('rdr2')">Red Dead Redemption 2 / 1</button>
+                    <button class="game-button" onclick="openGame('tlou')">The Last Of Us Part I / II</button>
+                    <button class="game-button" onclick="openGame('resident-evil')">Resident Evil</button>
+                    <button class="game-button" onclick="openGame('days-gone')">Days Gone</button>
+                    <button class="game-button" onclick="openGame('mortal-kombat')">Mortal Kombat</button>
                 </div>
             </div>
 
             <!-- Güncelleme Duyurusu -->
-            <div style="margin-top: 25px; background: rgba(10, 4, 22, 0.7); padding: 15px; border-radius: 10px; border: 1px solid rgba(255, 0, 128, 0.3); text-align: center;">
-                <p style="font-size: 0.95rem; color: #ff0080; font-weight: bold; margin-bottom: 6px;">
+            <div style="margin-top: 25px; background: rgba(2, 6, 23, 0.6); padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.2); text-align: center;">
+                <p style="font-size: 0.95rem; color: #00d2ff; font-weight: bold; margin-bottom: 6px;">
                     🇹🇷 2 gün sonra "⚡️FPSLAB" güncel durum sıralamaları gelecek. Takip etmenizi öneririz.
                 </p>
                 <p style="font-size: 0.85rem; color: #a0aec0;">
@@ -308,7 +268,7 @@
             </div>
 
             <!-- Vatandaşlık İmzası -->
-            <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(189, 0, 255, 0.3); font-size: 0.85rem; line-height: 1.6; color: #a0aec0; text-align: center;">
+            <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(0, 210, 255, 0.2); font-size: 0.85rem; line-height: 1.6; color: #a0aec0; text-align: center;">
                 <p>🇹🇷 Bu site bir Türk vatandaşı tarafından yazılım kodları ile yapılmıştır.</p>
                 <p>🇬🇧 This site was made with software code by a Turkish citizen.</p>
                 <p>🇪🇸 Este sitio fue hecho con código de software por un ciudadano turco.</p>
@@ -321,32 +281,30 @@
         </div>
     </main>
 
-    <!-- JavaScript Kodları -->
+    <!-- JavaScript Fonksiyonları -->
     <script>
+        function openGame(gameName) {
+            // Oyun butonlarına basıldığında yönlendirilecek ana site linki
+            window.open("https://adfsgedsfhstjhfghfda.github.io./fps-lab/", "_blank");
+        }
+
         function pickRandomGame() {
-            const games = ["God Of War / Ragnarök 🪓", "Red Dead Redemption 2 🤠", "The Last Of Us 🌿", "Resident Evil 4 Remake 🧟", "Cyberpunk 2077 🏙️", "Elden Ring ⚔️", "Minecraft 🧱", "Grand Theft Auto V 🚗", "Witcher 3: Wild Hunt 🐺", "Ghost Of Tsushima ⚔️"];
+            const games = ["God Of War Ragnarök 🪓", "Red Dead Redemption 2 🤠", "The Last Of Us Part I 🌿", "Resident Evil 4 Remake 🧟", "Cyberpunk 2077 🏙️", "Elden Ring ⚔️", "Minecraft 🧱", "Grand Theft Auto V 🚗", "Witcher 3 🐺"];
             const randomIndex = Math.floor(Math.random() * games.length);
             document.getElementById("gameResult").innerText = "🎯 Seçilen Oyun: " + games[randomIndex];
         }
 
         function pickRandomRtx() {
-            const rtxCards = ["NVIDIA GeForce RTX 3060 🎯", "NVIDIA GeForce RTX 3060 Ti ⚡️", "NVIDIA GeForce RTX 3070 🚀", "NVIDIA GeForce RTX 3080 💥", "NVIDIA GeForce RTX 4060 💻", "NVIDIA GeForce RTX 4060 Ti ⚡️", "NVIDIA GeForce RTX 4070 🚀", "NVIDIA GeForce RTX 4070 Super 🔥", "NVIDIA GeForce RTX 4080 Super 👑", "NVIDIA GeForce RTX 4090 🏆"];
+            const rtxCards = ["NVIDIA RTX 3060 🎯", "NVIDIA RTX 3060 Ti ⚡️", "NVIDIA RTX 3070 🚀", "NVIDIA RTX 3080 💥", "NVIDIA RTX 4060 💻", "NVIDIA RTX 4060 Ti ⚡️", "NVIDIA RTX 4070 🚀", "NVIDIA RTX 4080 Super 👑", "NVIDIA RTX 4090 🏆"];
             const randomIndex = Math.floor(Math.random() * rtxCards.length);
             document.getElementById("rtxResult").innerText = "🎮 Seçilen Ekran Kartı: " + rtxCards[randomIndex];
         }
 
         function pickRandomCpu() {
-            const cpus = ["AMD Ryzen 5 5600 ⚡️", "AMD Ryzen 5 7600X 🚀", "AMD Ryzen 7 7800X3D 🏆", "AMD Ryzen 9 7950X 👑", "Intel Core i5-12400F 💻", "Intel Core i5-13600K 🎯", "Intel Core i7-13700K 💥", "Intel Core i7-14700K 🔥", "Intel Core i9-13900K ⚡️", "Intel Core i9-14900K 🚀"];
+            const cpus = ["AMD Ryzen 5 5600 ⚡️", "AMD Ryzen 5 7600X 🚀", "AMD Ryzen 7 7800X3D 🏆", "AMD Ryzen 9 7950X 👑", "Intel Core i5-12400F 💻", "Intel Core i5-13600K 🎯", "Intel Core i7-14700K 🔥", "Intel Core i9-14900K 🚀"];
             const randomIndex = Math.floor(Math.random() * cpus.length);
             document.getElementById("cpuResult").innerText = "⚙️ Seçilen İşlemci: " + cpus[randomIndex];
         }
-      <p style="font-size: 0.95rem; color: #00d2ff; font-weight: bold; margin-bottom: 6px;">
-  ⚡️FPSLAB sitemiz stil olarak değişikliğe uğramıştır.
-   Sitemize Giriş ve Kayıt Olma sistemi gelmiştir.
-   Sitemiz 2026 yılından itibaren Resmileştirilmişir(©).
-
-  <p style="font-size: 0.95rem; color: #00d2ff; font-weight: bold; margin-bottom: 6px;">
-  ⚡️FPSLAB CREATORS 2026©
     </script>
 
 </body>
