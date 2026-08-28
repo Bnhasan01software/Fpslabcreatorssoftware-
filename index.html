@@ -175,11 +175,6 @@
     </style>
 </head>
 <body>
-
-    <!-- Sağ Üst Köşe Duyurusu -->
-    <div style="position: absolute; top: 20px; right: 25px; z-index: 100; background: rgba(18, 10, 36, 0.9); border: 1px solid #bd00ff; padding: 10px 15px; border-radius: 8px; box-shadow: 0 0 10px rgba(189, 0, 255, 0.4); text-align: right; max-width: 280px;">
-        <div style="font-size: 0.85rem; color: #00e1ff; font-weight: bold;">🇹🇷 En aşağıda oyunlar var eğlenmenize bakın :D</div>
-        <div style="font-size: 0.8rem; color: #a0aec0; margin-top: 3px;">🇬🇧 There are games at the very bottom, enjoy! :D</div>
     </div>
 
     <!-- Neon Arka Plan Topları -->
@@ -239,28 +234,51 @@
             <div style="margin-top: 25px; background: rgba(10, 4, 22, 0.7); padding: 20px; border-radius: 10px; border: 1px solid rgba(255, 0, 128, 0.3); text-align: center;">
                 
                 <!-- Rastgele Oyun -->
-                <div style="margin-bottom: 20px;">
-                    <button onclick="pickRandomGame()" style="padding: 10px 20px; background: transparent; border: 2px solid #bd00ff; color: #bd00ff; border-radius: 8px; font-weight: bold; cursor: pointer; box-shadow: 0 0 10px rgba(189, 0, 255, 0.4); transition: 0.3s;">
-                        🎲 Rastgele Oyun Seç / Pick Random Game
-                    </button>
-                    <div id="gameResult" style="margin-top: 10px; font-weight: bold; color: #00e1ff;"></div>
-                </div>
+                <script>
+  function pickRandomGame() {
+    const games = [
+      "God Of War Ragnarök 🪓 -> 1080p Ultra: ~75 FPS",
+      "Red Dead Redemption 2 🤠 -> 1080p High: ~65 FPS",
+      "The Last Of Us Part I 🌿 -> 1080p Medium: ~60 FPS",
+      "Resident Evil 4 Remake 🧟 -> 1080p High: ~85 FPS",
+      "Cyberpunk 2077 🏙️ -> 1080p Medium: ~55 FPS",
+      "Elden Ring ⚔️ -> 1080p High: ~60 FPS (Locked)",
+      "GTA V 🚗 -> 1080p Very High: ~110 FPS",
+      "Witcher 3: Wild Hunt 🐺 -> 1080p High: ~80 FPS"
+    ];
+    const randomIndex = Math.floor(Math.random() * games.length);
+    document.getElementById("gameResult").innerText = "🎯 " + games[randomIndex];
+  }
 
-                <!-- Rastgele RTX -->
-                <div style="margin-bottom: 20px;">
-                    <button onclick="pickRandomRtx()" style="padding: 10px 20px; background: transparent; border: 2px solid #ff0080; color: #ff0080; border-radius: 8px; font-weight: bold; cursor: pointer; box-shadow: 0 0 10px rgba(255, 0, 128, 0.4); transition: 0.3s;">
-                        ⚡️ Rastgele RTX Kartı Seç / Pick Random RTX GPU
-                    </button>
-                    <div id="rtxResult" style="margin-top: 10px; font-weight: bold; color: #00e1ff;"></div>
-                </div>
+  function pickRandomRtx() {
+    const rtxCards = [
+      "RTX 3060 🎯 -> 1080p Oyunculuk için İdeal",
+      "RTX 3060 Ti ⚡️ -> 1080p Ultra / 2K Giriş",
+      "RTX 3070 🚀 -> 2K Yüksek Ayar Canavarı",
+      "RTX 4060 💻 -> DLSS 3 Destekli F/P Kartı",
+      "RTX 4060 Ti ⚡️ -> 1080p Yüksek FPS & 2K",
+      "RTX 4070 🚀 -> 2K Ultra Ayarlar İçin Harika",
+      "RTX 4070 Super 🔥 -> 2K / 4K Akıcı Performans",
+      "RTX 4090 🏆 -> 4K Ultra Saf Güç"
+    ];
+    const randomIndex = Math.floor(Math.random() * rtxCards.length);
+    document.getElementById("rtxResult").innerText = "🎮 " + rtxCards[randomIndex];
+  }
 
-                <!-- Rastgele İşlemci -->
-                <div>
-                    <button onclick="pickRandomCpu()" style="padding: 10px 20px; background: transparent; border: 2px solid #00e1ff; color: #00e1ff; border-radius: 8px; font-weight: bold; cursor: pointer; box-shadow: 0 0 10px rgba(0, 225, 255, 0.4); transition: 0.3s;">
-                        🖥️ Rastgele İşlemci Seç / Pick Random CPU
-                    </button>
-                    <div id="cpuResult" style="margin-top: 10px; font-weight: bold; color: #ff0080;"></div>
-                </div>
+  function pickRandomCpu() {
+    const cpus = [
+      "AMD Ryzen 5 5600 ⚡️ -> F/P Bütçe Kralı",
+      "AMD Ryzen 5 7600X 🚀 -> DDR5 Giriş / Güçlü Canavar",
+      "AMD Ryzen 7 7800X3D 🏆 -> En İyi Oyun İşlemcisi",
+      "Intel Core i5-12400F 💻 -> F/P Intel Seçeneği",
+      "Intel Core i5-13600K 🎯 -> Hem Oyun Hem İş İçin Canavar",
+      "Intel Core i7-14700K 🔥 -> Yüksek Performans Sevdalılarına"
+    ];
+    const randomIndex = Math.floor(Math.random() * cpus.length);
+    document.getElementById("cpuResult").innerText = "⚙️ " + cpus[randomIndex];
+  }
+                </script>
+                </div>>
 
             </div>
 
