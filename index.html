@@ -9,12 +9,12 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Consolas', 'Segoe UI', Tahoma, monospace, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            background-color: #0d0e15;
-            color: #fcee0a;
+            background-color: #0b0512;
+            color: #ffffff;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -22,7 +22,7 @@
             position: relative;
         }
 
-        /* Cyberpunk Neon Arka Plan Parıltıları */
+        /* Mor ve Pembe Neon Arka Plan Parıltıları */
         .bg-balls {
             position: fixed;
             top: 0;
@@ -42,31 +42,31 @@
         .ball1 { 
             width: 300px; 
             height: 300px; 
-            top: 5%; 
-            left: 5%; 
-            background: radial-gradient(circle, rgba(252, 238, 10, 0.4) 0%, rgba(0,0,0,0) 70%);
+            top: 10%; 
+            left: 10%; 
+            background: radial-gradient(circle, rgba(255, 0, 127, 0.6) 0%, rgba(0,0,0,0) 70%);
             animation-duration: 8s; 
         }
         .ball2 { 
             width: 400px; 
             height: 400px; 
-            bottom: 5%; 
-            right: 5%; 
-            background: radial-gradient(circle, rgba(0, 240, 255, 0.4) 0%, rgba(0,0,0,0) 70%);
+            bottom: 10%; 
+            right: 10%; 
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.6) 0%, rgba(0,0,0,0) 70%);
             animation-duration: 12s; 
         }
         .ball3 { 
-            width: 200px; 
-            height: 200px; 
+            width: 220px; 
+            height: 220px; 
             top: 45%; 
             left: 45%; 
-            background: radial-gradient(circle, rgba(255, 0, 60, 0.3) 0%, rgba(0,0,0,0) 70%);
+            background: radial-gradient(circle, rgba(0, 240, 255, 0.4) 0%, rgba(0,0,0,0) 70%);
             animation-duration: 10s; 
         }
 
         @keyframes float {
             0% { transform: translate(0, 0) scale(1); }
-            100% { transform: translate(40px, 60px) scale(1.15); }
+            100% { transform: translate(50px, 80px) scale(1.2); }
         }
 
         header {
@@ -76,8 +76,8 @@
         }
 
         header div {
-            color: #fcee0a !important;
-            text-shadow: 0 0 12px rgba(252, 238, 10, 0.8) !important;
+            color: #ff007f !important;
+            text-shadow: 0 0 15px rgba(255, 0, 127, 0.8) !important;
         }
 
         main {
@@ -90,13 +90,13 @@
             z-index: 10;
         }
 
-        /* Cyberpunk Ana Kart Stili */
+        /* Neon Mor-Pembe Kart */
         .card {
-            background: rgba(18, 19, 26, 0.92);
+            background: rgba(20, 10, 30, 0.88);
             backdrop-filter: blur(12px);
-            border: 2px solid #fcee0a;
-            box-shadow: 0 0 25px rgba(252, 238, 10, 0.3), inset 0 0 15px rgba(0, 240, 255, 0.15);
-            border-radius: 4px;
+            border: 2px solid #ff007f;
+            box-shadow: 0 0 30px rgba(255, 0, 127, 0.4), inset 0 0 15px rgba(138, 43, 226, 0.3);
+            border-radius: 16px;
             padding: 35px;
             max-width: 900px;
             width: 100%;
@@ -112,15 +112,14 @@
 
         .lang-box {
             flex: 1;
-            background: rgba(10, 11, 16, 0.8);
+            background: rgba(12, 5, 20, 0.7);
             padding: 20px;
-            border-radius: 4px;
-            border: 1px solid #00f0ff;
-            color: #e0e6ed;
+            border-radius: 10px;
+            border: 1px solid rgba(138, 43, 226, 0.5);
             font-size: 0.95rem;
             line-height: 1.6;
             text-align: left;
-            box-shadow: 0 0 8px rgba(0, 240, 255, 0.2);
+            box-shadow: 0 0 10px rgba(138, 43, 226, 0.2);
         }
 
         .flag-title {
@@ -130,8 +129,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            color: #fcee0a;
-            text-shadow: 0 0 5px rgba(252, 238, 10, 0.5);
+            color: #ff007f;
         }
 
         a {
@@ -139,64 +137,62 @@
             text-decoration: none;
             word-break: break-all;
             font-weight: bold;
-            transition: all 0.2s ease-in-out;
+            transition: 0.3s;
         }
 
         a:hover {
-            color: #ff003c !important;
-            text-shadow: 0 0 10px rgba(255, 0, 60, 0.8);
+            color: #ff007f !important;
+            text-shadow: 0 0 10px rgba(255, 0, 127, 0.8);
         }
 
         .footer-text {
             margin-top: 15px;
             font-size: 1.3rem;
             font-weight: 900;
-            color: #fcee0a;
-            letter-spacing: 2px;
-            text-shadow: 0 0 12px rgba(252, 238, 10, 0.8);
-            border-top: 1px solid rgba(252, 238, 10, 0.4);
+            color: #ff007f;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 12px rgba(255, 0, 127, 0.8);
+            border-top: 1px solid rgba(255, 0, 127, 0.3);
             padding-top: 15px;
         }
 
-        /* Cyberpunk Neon Sarı/Siyah Butonlar */
+        /* Mor / Pembe Butonlar */
         .game-button {
             padding: 10px 15px;
-            background: #000000;
-            border: 1px solid #fcee0a;
-            color: #fcee0a;
-            border-radius: 2px;
+            background: rgba(30, 10, 45, 0.9);
+            border: 1px solid #ff007f;
+            color: #fff;
+            border-radius: 6px;
             cursor: pointer;
-            font-weight: bold;
-            transition: all 0.2s ease;
+            font-weight: 600;
+            transition: all 0.3s;
             display: inline-block;
-            text-transform: uppercase;
         }
 
         .game-button:hover {
-            background: #fcee0a;
-            color: #000000;
-            box-shadow: 0 0 15px rgba(252, 238, 10, 0.9);
-            transform: scale(1.03);
+            background: #ff007f;
+            color: #ffffff;
+            box-shadow: 0 0 15px rgba(255, 0, 127, 0.8);
+            transform: translateY(-2px);
         }
 
-        /* Cyberpunk Rastgele Seçici Butonları */
         .rand-btn {
             padding: 10px 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border: 2px solid #00f0ff;
-            color: #00f0ff;
-            border-radius: 2px;
+            background: transparent;
+            border: 2px solid #8a2be2;
+            color: #d8b4fe;
+            border-radius: 8px;
             font-weight: bold;
             cursor: pointer;
-            box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+            box-shadow: 0 0 12px rgba(138, 43, 226, 0.5);
             transition: 0.3s;
-            text-transform: uppercase;
         }
 
         .rand-btn:hover {
-            background: #00f0ff;
-            color: #000000;
-            box-shadow: 0 0 15px rgba(0, 240, 255, 0.9);
+            background: #8a2be2;
+            color: #ffffff;
+            box-shadow: 0 0 18px rgba(138, 43, 226, 0.9);
+            transform: translateY(-2px);
         }
 
         @media (max-width: 768px) {
@@ -244,38 +240,38 @@
             </div>
 
             <!-- Gelecek Oyunlar -->
-            <div style="margin-top: 25px; background: rgba(2, 6, 23, 0.6); padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.2); text-align: left;">
-                <div style="font-size: 1.1rem; font-weight: bold; color: #00d2ff; margin-bottom: 8px;">🎮 Gelecek Oyunlar:</div>
+            <div style="margin-top: 25px; background: rgba(12, 5, 20, 0.7); padding: 15px; border-radius: 10px; border: 1px solid rgba(138, 43, 226, 0.4); text-align: left;">
+                <div style="font-size: 1.1rem; font-weight: bold; color: #ff007f; margin-bottom: 8px;">🎮 Gelecek Oyunlar:</div>
                 <p style="font-size: 0.9rem; line-height: 1.6; color: #e0e6ed;">
                     The Witcher 1, The Witcher 2, The Witcher 3, Resident Evil 6, Resident Evil 5, Resident Evil biohazard, SILENT HILL 2, The Walking Dead 2, BIOSHOCK, Half Life 2, Uncharted 4: A THIEF'S END, Ghost Of Tsushima, Detroit: Become Human, SKYRIM, Call Of Duty WWI, Hitman: Blood Money, Pragmata, Watch Dogs 2, Call Of Duty Modern Warfare 4, Green Hell, Minecraft Dungeons, Left 4 Dead, Resident Evil Resistance, Way Of The Hunter, Outlast, Beyond: Two Souls, 7 Days To Die, Escape The Backrooms, Payday 2, Dying Light.
                 </p>
             </div>
 
-            <div style="margin-top: 15px; font-size: 1.1rem; font-weight: bold; color: #00d2ff; text-shadow: 0 0 8px rgba(0, 210, 255, 0.6);">
+            <div style="margin-top: 15px; font-size: 1.1rem; font-weight: bold; color: #ff007f; text-shadow: 0 0 8px rgba(255, 0, 127, 0.6);">
                 ⚡️FPSLAB
             </div>
 
             <!-- Rastgele Seçiciler -->
-            <div style="margin-top: 25px; background: rgba(2, 6, 23, 0.6); padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.2); text-align: center;">
+            <div style="margin-top: 25px; background: rgba(12, 5, 20, 0.7); padding: 20px; border-radius: 10px; border: 1px solid rgba(138, 43, 226, 0.4); text-align: center;">
                 <div style="margin-bottom: 20px;">
                     <button class="rand-btn" onclick="pickRandomGame()">🎲 Rastgele Oyun Seç / Pick Random Game</button>
-                    <div id="gameResult" style="margin-top: 10px; font-weight: bold; color: #00d2ff;"></div>
+                    <div id="gameResult" style="margin-top: 10px; font-weight: bold; color: #ff007f;"></div>
                 </div>
 
                 <div style="margin-bottom: 20px;">
                     <button class="rand-btn" onclick="pickRandomRtx()">⚡️ Rastgele RTX Kartı Seç / Pick Random RTX GPU</button>
-                    <div id="rtxResult" style="margin-top: 10px; font-weight: bold; color: #00d2ff;"></div>
+                    <div id="rtxResult" style="margin-top: 10px; font-weight: bold; color: #ff007f;"></div>
                 </div>
 
                 <div>
                     <button class="rand-btn" onclick="pickRandomCpu()">🖥️ Rastgele İşlemci Seç / Pick Random CPU</button>
-                    <div id="cpuResult" style="margin-top: 10px; font-weight: bold; color: #00d2ff;"></div>
+                    <div id="cpuResult" style="margin-top: 10px; font-weight: bold; color: #ff007f;"></div>
                 </div>
             </div>
 
             <!-- Tıklandığında Ana Sitemize Yönlendiren Oyun Butonları -->
-            <div style="margin-top: 25px; background: rgba(2, 6, 23, 0.6); padding: 20px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.2); text-align: center;">
-                <div style="font-size: 1.1rem; font-weight: bold; color: #00d2ff; margin-bottom: 5px;">🎮 Oyununuzu seçin / Select your game</div>
+            <div style="margin-top: 25px; background: rgba(12, 5, 20, 0.7); padding: 20px; border-radius: 10px; border: 1px solid rgba(138, 43, 226, 0.4); text-align: center;">
+                <div style="font-size: 1.1rem; font-weight: bold; color: #ff007f; margin-bottom: 5px;">🎮 Oyununuzu seçin / Select your game</div>
                 <div style="font-size: 0.85rem; color: #a0aec0; margin-bottom: 15px;">🇹🇷 1 kere tıklayın | 🇬🇧 Click 1 time</div>
                 
                 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
@@ -289,8 +285,8 @@
             </div>
 
             <!-- Güncelleme Duyurusu -->
-            <div style="margin-top: 25px; background: rgba(2, 6, 23, 0.6); padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.2); text-align: center;">
-                <p style="font-size: 0.95rem; color: #00d2ff; font-weight: bold; margin-bottom: 6px;">
+            <div style="margin-top: 25px; background: rgba(12, 5, 20, 0.7); padding: 15px; border-radius: 10px; border: 1px solid rgba(138, 43, 226, 0.4); text-align: center;">
+                <p style="font-size: 0.95rem; color: #ff007f; font-weight: bold; margin-bottom: 6px;">
                    ⚡️FPSLAB Uptade/Güncellemeler;
                     Sitemizin stili değişmiştir.
                     Sitemize Giriş ve Kayıt Olma Sistemi gelmiştir.
@@ -303,7 +299,7 @@
                 </p>
             </div>
 
-            <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(0, 210, 255, 0.2); font-size: 0.85rem; line-height: 1.6; color: #a0aec0; text-align: center;">
+            <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(138, 43, 226, 0.3); font-size: 0.85rem; line-height: 1.6; color: #a0aec0; text-align: center;">
                 <p>🇹🇷 Bu site bir Türk vatandaşı tarafından yazılım kodları ile yapılmıştır.</p>
                 <p>🇬🇧 This site was made with software code by a Turkish citizen.</p>
                 <p>🇪🇸 Este sitio fue hecho con código de software por un ciudadano turco.</p>
